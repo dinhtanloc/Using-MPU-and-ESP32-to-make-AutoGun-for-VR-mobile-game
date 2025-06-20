@@ -14,12 +14,12 @@
 #include "tensorflow/lite/micro/all_ops_resolver.h"
 #include "model.h"
 
-const char* ssid = "Cá mập xanh";
-const char* password = "cubideptrai";
+const char* ssid = "";
+const char* password = "";
 
 WiFiUDP udp;
 const unsigned int localPort = 8080;
-IPAddress receiverIP(192, 168, 137, 69); // máy nhận (laptop)
+IPAddress receiverIP(192, 168, 132, 32); // máy nhận (laptop)
 unsigned int receiverPort = 8080;
 bool clientConnected = false;
 
