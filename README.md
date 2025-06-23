@@ -1,7 +1,8 @@
 # 🎮 VR Mobile Shooting Game - Hardware Integration with ESP32 & MPU6050
 
 This project is a part of our final-year capstone, aiming to deliver a highly immersive and affordable mobile VR shooting experience. The system integrates a custom-designed gun-shaped controller equipped with an MPU6050 motion sensor and an ESP32 microcontroller. These components work together to track real-time motion and interact seamlessly with a Unity-based VR environment on Android.
-![Gun Controller Prototype](assets/images/image copy 3.jpg)
+
+![Gun Controller Prototype](assets/images/imagecopy3.jpg)
 
 ## 🔧 Hardware Overview
 
@@ -9,19 +10,19 @@ Our controller is based on the ESP32 Dev Board, which offers built-in WiFi and B
 
 The physical controller is designed to mimic the feel of a gun, enhancing realism and immersion. It includes trigger functionality mapped to firing actions in-game.
 
-![ESP32 + MPU6050 image](assets/images/image copy 2.png)
+![ESP32 + MPU6050 image](assets/images/imagecopy2.png)
 
 ## 🔁 Communication Protocol
 
 To ensure low-latency data transfer, we utilize the UDP protocol over a local Wi-Fi network. This allows real-time communication (typically ≤1ms within LAN) between the ESP32 and the mobile phone. For testing and comparison, we also experimented with BLE and TCP socket protocols, though UDP provided the best balance of speed and compatibility.
 
-![Protocal evaluation](assets/images/image copy 5.png)
+![Protocal evaluation](assets/images/imagecopy5.png)
 
 ## 🔍 Sensor Data Processing
 
 The raw data from MPU6050 is noisy by nature. We apply a Kalman Filter in the ESP32 firmware to stabilize orientation readings, ensuring smooth gameplay. The processed pitch, roll, and yaw values are sent at a consistent frame rate to maintain accuracy. Button presses (e.g. trigger action) are also transmitted.
 
-![Kalman Filter Processing](assets/images/image copy.png)
+![Kalman Filter Processing](assets/images/imagecopy.png)
 
 ## 🤖 AI & Machine Learning
 
@@ -40,7 +41,7 @@ We selected **MLPs** as the final model for its balance between accuracy and com
 
 Data was collected, preprocessed in Python, and models were integrated into the game logic using socket communication.
 
-![ML evaluation](assets/images/image copy 4.png)
+![ML evaluation](assets/images/imagecopy4.png)
 
 
 ## ⚙️ Development Environment
