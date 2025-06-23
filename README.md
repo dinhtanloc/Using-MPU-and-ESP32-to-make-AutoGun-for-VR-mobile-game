@@ -1,4 +1,4 @@
-"# 🎮 VR Mobile Shooting Game - Hardware Integration with ESP32 & MPU6050
+# 🎮 VR Mobile Shooting Game - Hardware Integration with ESP32 & MPU6050
 
 This project is a part of our final-year capstone, aiming to deliver a highly immersive and affordable mobile VR shooting experience. The system integrates a custom-designed gun-shaped controller equipped with an MPU6050 motion sensor and an ESP32 microcontroller. These components work together to track real-time motion and interact seamlessly with a Unity-based VR environment on Android.
 ![Gun Controller Prototype](assets/image copy 3.jpg)
@@ -85,4 +85,4 @@ We plan to improve this prototype by:
 
 ## 🧠 Conclusion
 
-This project demonstrates how a simple yet thoughtful hardware setup can dramatically improve mobile VR interaction. By combining ESP32 and MPU6050 with Unity, we create a responsive, affordable, and immersive experience that challenges the limitations of mobile VR platforms."
+This project demonstrates how a simple yet thoughtful hardware setup can dramatically improve mobile VR interaction. By combining ESP32 and MPU6050 with Unity, we create a responsive, affordable, and immersive experience that challenges the limitations of mobile VR platforms.
